@@ -10,7 +10,6 @@ import { AudioTrackDropdownService } from '../../services/audio-track-dropdown.s
   selector: 'app-track-item-list',
   templateUrl: './track-item-list.component.html',
   styleUrls: ['./track-item-list.component.scss'],
-  providers: [ AudioTrackDropdownService ]
 })
 export class TrackItemListComponent implements OnInit {
   tracks:AudioTrackDropdownItem[];

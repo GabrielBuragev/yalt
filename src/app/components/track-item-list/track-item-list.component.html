@@ -1,3 +1,6 @@
-<p>
-  Query is {{query}}
-</p>
+<ion-list class="audio-track-list">
+  <ion-item class="audio-track-list-item" *ngFor="let audioTrack of audioTrackDropdownService.list">
+    {{audioTrack.title}}
+  </ion-item>
+
+</ion-list>

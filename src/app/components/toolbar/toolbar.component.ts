@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AudioTrackDropdownService } from 'src/app/services/audio-track-dropdown.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -9,12 +10,12 @@ export class ToolbarComponent implements OnInit {
 
   public searchVal:string = '';
 
-  constructor() { }
+  constructor(private audioTrackDropdownService:AudioTrackDropdownService) { }
 
   ngOnInit() {}
 
   onSearchChange(_event) {
-    window.alert(this.searchVal);
+    this.audioTrackDropdownService.fetch(this.searchVal);
   }
 
   onSearchClear(_event) {

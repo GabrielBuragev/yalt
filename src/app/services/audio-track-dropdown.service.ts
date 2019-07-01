@@ -12,6 +12,6 @@ export class AudioTrackDropdownService {
   constructor(private http:HttpClient) { }
 
   fetch(q) {
-    return this.http.get<AudioTrackDropdownItem[]>(this.url)
+    this.http.get<AudioTrackDropdownItem[]>(this.url).subscribe(items => {this.list = items; console.log(this.list)});
   }
 }
