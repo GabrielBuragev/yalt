@@ -1,0 +1,7 @@
+{
+  "name": "ionic-yt-dl",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

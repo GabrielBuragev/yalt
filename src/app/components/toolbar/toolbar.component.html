@@ -1,0 +1,12 @@
+<ion-toolbar>
+  <ion-searchbar 
+    (ionInput)="searchVal = $event.target.value"
+    (ionChange)="onSearchChange($event)"
+    (ionClear)="onSearchClear($event)"
+    (ionFocus)="onSearchFocus($event)"
+    (ionBlur)="onSearchBlur($event)"
+    placeholder="Search for songs ..."
+    debounce="350"
+    [value]="searchVal"></ion-searchbar>
+  <app-track-item-list [query]="searchVal"></app-track-item-list>
+</ion-toolbar>
