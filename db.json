@@ -1,169 +1,103 @@
 {
-    "audioTrackDropdownItems": [
-    {
-    "kind": "youtube#searchResult",
-    "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/i2MGT5WoE__JkPwWLLzBAlvpcMM\"",
-    "id": {
-    "kind": "youtube#video",
-    "videoId": "TvD90NRDM-o"
-    },
-    "snippet": {
-    "publishedAt": "2018-05-17T16:00:02.000Z",
-    "channelId": "UCGBpxWJr9FNOcFYA5GkKrMg",
-    "title": "Legowelt | Thumping 808 Live Set | Boiler Room BUDx Santiago",
-    "description": "Lord Legowelt firing off all cylinders. ▻ Subscribe to our YT channel: http://blrrm.tv/YT.",
-    "thumbnails": {
-    "default": {
-    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/default.jpg",
-    "width": 120,
-    "height": 90
-    },
-    "medium": {
-    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/mqdefault.jpg",
-    "width": 320,
-    "height": 180
-    },
-    "high": {
-    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/hqdefault.jpg",
-    "width": 480,
-    "height": 360
-    }
-    },
-    "channelTitle": "Boiler Room",
-    "liveBroadcastContent": "none"
-    }
-},
-{
-    "kind": "youtube#searchResult",
-    "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/Pi2LEwM89QcqWi6K9zH5BOk0h7o\"",
-    "id": {
-    "kind": "youtube#video",
-    "videoId": "TGCxBVu1-sE"
-    },
-    "snippet": {
-    "publishedAt": "2015-09-10T13:21:07.000Z",
-    "channelId": "UCiu2v3qCcbHI7sXsX4rPsXA",
-    "title": "How To Make A - Legowelt - Track",
-    "description": "Legowelt has been putting other house and techno producers to shame since the the 1990s. The Dutch artist releases music at a rate of knots – there's been at ...",
-    "thumbnails": {
-    "default": {
-    "url": "https://i.ytimg.com/vi/TGCxBVu1-sE/default.jpg",
-    "width": 120,
-    "height": 90
-    },
-    "medium": {
-    "url": "https://i.ytimg.com/vi/TGCxBVu1-sE/mqdefault.jpg",
-    "width": 320,
-    "height": 180
-    },
-    "high": {
-    "url": "https://i.ytimg.com/vi/TGCxBVu1-sE/hqdefault.jpg",
-    "width": 480,
-    "height": 360
-    }
-    },
-    "channelTitle": "FACTmagazine",
-    "liveBroadcastContent": "none"
-    }
-},
-{
-    "kind": "youtube#searchResult",
-    "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/yf5PTjDIGU9NEXjqG2Gajzlz8J4\"",
-    "id": {
-    "kind": "youtube#video",
-    "videoId": "9eigT6DvHJo"
-    },
-    "snippet": {
-    "publishedAt": "2014-04-02T13:47:24.000Z",
-    "channelId": "UC23xW9iC-ADQBLABJ9uIZww",
-    "title": "Legowelt - Studio Tour",
-    "description": "FM head to The Hague in The Netherlands to visit the two synth-packed studios of Legowelt. CREDITS Producer: Chris Barker Editor: Keir Doherty ...",
-    "thumbnails": {
-    "default": {
-    "url": "https://i.ytimg.com/vi/9eigT6DvHJo/default.jpg",
-    "width": 120,
-    "height": 90
-    },
-    "medium": {
-    "url": "https://i.ytimg.com/vi/9eigT6DvHJo/mqdefault.jpg",
-    "width": 320,
-    "height": 180
-    },
-    "high": {
-    "url": "https://i.ytimg.com/vi/9eigT6DvHJo/hqdefault.jpg",
-    "width": 480,
-    "height": 360
-    }
-    },
-    "channelTitle": "Future Music Magazine",
-    "liveBroadcastContent": "none"
-    }
-},
-{
-    "kind": "youtube#searchResult",
-    "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/lAuDWRQYfszEmmiTz5M221rlB3I\"",
-    "id": {
-    "kind": "youtube#video",
-    "videoId": "p1bniI-8eyY"
-    },
-    "snippet": {
-    "publishedAt": "2017-09-11T14:56:04.000Z",
-    "channelId": "UCDHvlud7Hf86FxFsogrBcMg",
-    "title": "RA Sessions: Legowelt | Resident Advisor",
-    "description": "The Dutch artist performs a freaky extended live session. Subscribe to RA's YouTube channel: http://bit.ly/1x7PeGy This whole lo-fi, straight-to-tape, DIY ...",
-    "thumbnails": {
-    "default": {
-    "url": "https://i.ytimg.com/vi/p1bniI-8eyY/default.jpg",
-    "width": 120,
-    "height": 90
-    },
-    "medium": {
-    "url": "https://i.ytimg.com/vi/p1bniI-8eyY/mqdefault.jpg",
-    "width": 320,
-    "height": 180
-    },
-    "high": {
-    "url": "https://i.ytimg.com/vi/p1bniI-8eyY/hqdefault.jpg",
-    "width": 480,
-    "height": 360
-    }
-    },
-    "channelTitle": "Resident Advisor",
-    "liveBroadcastContent": "none"
-    }
-},
-{
-    "kind": "youtube#searchResult",
-    "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/PjqucHyka1QxK-CgkRG0qH4Z_74\"",
-    "id": {
-    "kind": "youtube#video",
-    "videoId": "CHUXONm7w9w"
-    },
-    "snippet": {
-    "publishedAt": "2019-04-22T20:57:50.000Z",
-    "channelId": "UCshvjciefmwEOKBVu2O5mzg",
-    "title": "Legowelt - Disco Rout (Younger Rebinds Remix)",
-    "description": "Album : DISCO ROUT REMIXES - #COR12164 Label : Cocoon Recordings Released : 2019/04/29 Country : Germany BOUGHT AT ...",
-    "thumbnails": {
-    "default": {
-    "url": "https://i.ytimg.com/vi/CHUXONm7w9w/default.jpg",
-    "width": 120,
-    "height": 90
-    },
-    "medium": {
-    "url": "https://i.ytimg.com/vi/CHUXONm7w9w/mqdefault.jpg",
-    "width": 320,
-    "height": 180
-    },
-    "high": {
-    "url": "https://i.ytimg.com/vi/CHUXONm7w9w/hqdefault.jpg",
-    "width": 480,
-    "height": 360
-    }
-    },
-    "channelTitle": "From Minimal To Progressive",
-    "liveBroadcastContent": "none"
-    }
-}
-]
+    "audioTrackDropdownItems": [{
+            "id": "TvD90NRDM-o",
+            "title": "Legowelt | Thumping 808 Live Set | Boiler Room BUDx Santiago",
+            "description": "Lord Legowelt firing off all cylinders. ▻ Subscribe to our YT channel: http://blrrm.tv/YT.",
+            "thumbnails": [{
+                    "type": "default",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                {
+                    "type": "medium",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                {
+                    "type": "high",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            ],
+            "channelTitle": "Boiler Room"
+        },
+        {
+            "id": "TvD90NRDM-o",
+            "title": "Legowelt | Thumping 808 Live Set | Boiler Room BUDx Santiago",
+            "description": "Lord Legowelt firing off all cylinders. ▻ Subscribe to our YT channel: http://blrrm.tv/YT.",
+            "thumbnails": [{
+                    "type": "default",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                {
+                    "type": "medium",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                {
+                    "type": "high",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            ],
+            "channelTitle": "Boiler Room"
+        },
+        {
+            "id": "TvD90NRDM-o",
+            "title": "Legowelt | Thumping 808 Live Set | Boiler Room BUDx Santiago",
+            "description": "Lord Legowelt firing off all cylinders. ▻ Subscribe to our YT channel: http://blrrm.tv/YT.",
+            "thumbnails": [{
+                    "type": "default",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                {
+                    "type": "medium",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                {
+                    "type": "high",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            ],
+            "channelTitle": "Boiler Room"
+        },
+        {
+            "id": "TvD90NRDM-o",
+            "title": "Legowelt | Thumping 808 Live Set | Boiler Room BUDx Santiago",
+            "description": "Lord Legowelt firing off all cylinders. ▻ Subscribe to our YT channel: http://blrrm.tv/YT.",
+            "thumbnails": [{
+                    "type": "default",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/default.jpg",
+                    "width": 120,
+                    "height": 90
+                },
+                {
+                    "type": "medium",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                },
+                {
+                    "type": "high",
+                    "url": "https://i.ytimg.com/vi/TvD90NRDM-o/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                }
+            ],
+            "channelTitle": "Boiler Room"
+        }
+    ]
 }
