@@ -1,5 +1,5 @@
 {
-    audioTrackDropdownItems: [
+    "audioTrackDropdownItems": [
     {
     "kind": "youtube#searchResult",
     "etag": "\"Bdx4f4ps3xCOOo1WZ91nTLkRZ_c/i2MGT5WoE__JkPwWLLzBAlvpcMM\"",
