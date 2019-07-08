@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AudioTrackDropdownService } from 'src/app/services/audio-track-dropdown.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -10,16 +11,18 @@ export class ToolbarComponent implements OnInit {
 
   public searchVal:string = '';
 
-  constructor(private audioTrackDropdownService:AudioTrackDropdownService) { }
+  constructor(private router: Router, private audioTrackDropdownService:AudioTrackDropdownService) { }
 
   ngOnInit() {}
 
-  onSearchChange(_event) {
-    this.audioTrackDropdownService.fetch(this.searchVal);
-  }
+  /** Deactivated for now */
+  // onSearchChange(_event) {
+  //   if(this.searchVal == '')
+  //     return false;
+  //   this.searchByQuery(this.searchVal);
+  // }
 
   onSearchClear(_event) {
-
   }
 
   onSearchFocus(_event){
@@ -31,7 +34,20 @@ export class ToolbarComponent implements OnInit {
   }
 
   onSearchInput(_event){
-    console.log(_event);
+    this.searchVal = _event.target.value;
+  }
+
+  onSearchSubmitted(_event){
+
+    if(this.searchVal === '') { return false; }
+    
+    this.searchByQuery(this.searchVal);
+  }
+
+  searchByQuery(q){
+    this.router.navigateByUrl('/home');
+    
+    this.audioTrackDropdownService.fetch(q)
   }
 
 }
