@@ -1,0 +1,54 @@
+<div class="ion-padding" class="ion-content">
+    <ion-grid class="ion-content-grid">
+        <ion-row>
+            <ion-col 
+                sizeXs="12" sizeSm="12" sizeMd="6" sizeLg="6" sizeXl="6" 
+                offsetMd="3" 
+                class="ion-text-center">
+                <ion-text class="audio-track-title" >
+                    <h3>{{ ( audioTrackSelected$ | async ).details.title}}</h3>
+                </ion-text>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col 
+
+                sizeXs="12" sizeSm="12" sizeMd="6" sizeLg="6" sizeXl="6" 
+                offsetMd="3" 
+                class="ion-text-center audio-track-channel">
+                <ion-text class="audio-track-title" >
+                    <!-- TODO: Create router-link to /channel/:id -->
+                    <h5>
+                        <u>{{ ( audioTrackSelected$ | async ).details.channel.title}}</u>
+                    </h5>
+                </ion-text>
+
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col 
+
+                sizeXs="12" sizeSm="12" sizeMd="6" sizeLg="6" sizeXl="6" 
+                offsetMd="3" 
+                class="ion-text-center audio-track-thumbnail">
+
+                <ion-thumbnail class="ion-thumbnail">
+                    <img [src]="( audioTrackSelected$ | async ).details.thumbnails.medium.url">
+                    
+                </ion-thumbnail>
+
+            </ion-col>
+        </ion-row>
+
+        <app-audio-controls
+            (onPlay)="onPlay($event)"
+            (onNext)="onNext($event)"
+            (onBack)="onBack($event)"
+        >
+        
+        </app-audio-controls>            
+
+
+    </ion-grid>
+
+</div>
