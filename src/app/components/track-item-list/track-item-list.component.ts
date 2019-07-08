@@ -3,8 +3,9 @@ import { File } from '@ionic-native/file/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
 import { Platform } from '@ionic/angular';
-import { AudioTrackDropdownItem } from '../../models/AudioTrackDrodownItem';
-import { AudioTrackDropdownService } from '../../services/audio-track-dropdown.service';
+import { SearchDropdownItem } from '../../models/SearchDropdownItem';
+import { AudioTrackDropdownService } from '../../services/audio-track-dropdown.service'
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-track-item-list',
@@ -12,46 +13,13 @@ import { AudioTrackDropdownService } from '../../services/audio-track-dropdown.s
   styleUrls: ['./track-item-list.component.scss'],
 })
 export class TrackItemListComponent implements OnInit {
-  tracks:AudioTrackDropdownItem[];
+  public dropdownItems$: Observable<SearchDropdownItem[]>
+
+  constructor(public fs:File, public plt:Platform, audioTrackDropdownService: AudioTrackDropdownService) { 
+    var self = this;
+    this.dropdownItems$ = audioTrackDropdownService.getDropdownItems();
+  }
+
+  ngOnInit() {}
   
-  constructor(public fs:File, private media: Media, public transfer:FileTransfer, public plt:Platform, public audioTrackDropdownService:AudioTrackDropdownService) { }
-
-  ngOnInit() {
-    // this.plt.ready().then(() => this.download());
-    // this.plt.ready().then(() => this.playSum());
-    // this.fs.listDir('file:///', '').then(entries => { window.alert(entries); })
-  }
-  onDeviceReady() {
-
-
-      // const file = this.media.create('http://res.cloudinary.com/dtj7y1r0l/video/upload/v1458851262/msgSound_x2laav.mp3');
-
-      // file.onStatusUpdate.subscribe(status => window.alert(status));
-      // file.onSuccess.subscribe(() => window.alert('success'));
-      // file.onError.subscribe(error => window.alert('error'));
-
-      // file.play();
-
-      // file.getCurrentPosition().then((position) => {
-      //   window.alert(position);
-      // });
-  }
-  playSum(){
-    const f = this.media.create(this.fs.dataDirectory + 'temp.mp3');
-
-    f.play();
-  }
-
-  download() {
-
-    const url = 'http://res.cloudinary.com/dtj7y1r0l/video/upload/v1458851262/msgSound_x2laav.mp3';
-    const fileTransfer = this.transfer.create();
-
-    fileTransfer.download(url, this.fs.dataDirectory + 'temp.mp3').then((entry) => {
-      window.alert('download complete: ' + entry.toURL());
-    }, (error) => {
-      // handle error
-    });
-  }
-
 }

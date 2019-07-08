@@ -1,6 +1,12 @@
 <ion-list class="audio-track-list">
-  <ion-item class="audio-track-list-item" *ngFor="let audioTrack of audioTrackDropdownService.list">
-    {{audioTrack.title}}
+  <ion-item 
+    class="audio-track-list-item" 
+    *ngFor="let audioTrack of (dropdownItems$ | async)"
+    button
+    [routerLink]="'/audio-track-details/' + audioTrack.videoId"
+    
+    >
+    <div [innerHTML]="audioTrack.title"></div>
   </ion-item>
 
 </ion-list>
