@@ -1,0 +1,33 @@
+<ion-row class="audio-controls">
+  <ion-col 
+    size=4
+    class="previous-control ion-text-center">
+    <ion-icon 
+      name="arrow-round-back"
+      (click)="backClicked($event)"></ion-icon>
+  </ion-col>
+  <ion-col 
+    size=4
+    class="previous-control ion-text-center">
+      <ion-icon 
+        *ngIf="!(audioTrackSelected$ | async).sound.playing"
+        name="play"
+        (click)="playClicked($event)">
+      </ion-icon>
+
+      <ion-icon
+        *ngIf="(audioTrackSelected$ | async).sound.playing"        
+        name="pause"
+        (click)="pauseClicked($event)">
+      
+      </ion-icon>
+    </ion-col>
+  <ion-col 
+    size=4
+    class="previous-control ion-text-center">
+      <ion-icon 
+        name="arrow-round-forward"
+        (click)="forwardClicked($event)">
+      </ion-icon>
+  </ion-col>
+</ion-row>  
