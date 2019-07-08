@@ -1,0 +1,36 @@
+{
+  "name": "yalt-server",
+  "version": "1.0.0",
+  "description": "Yalt app server",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "youtube",
+    "audio",
+    "track",
+    "real-time",
+    "streaming"
+  ],
+  "author": "Gasb",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express-validator": "^6.1.1",
+    "fastify": "^2.6.0",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
+    "multer": "^1.4.1",
+    "youtube-api": "^2.0.10",
+    "youtube-node": "^1.3.3",
+    "ytdl-core": "^0.29.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/register": "^7.4.4"
+  }
+}
