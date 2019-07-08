@@ -1,7 +1,9 @@
 import { AudioTrackDropdownItemThumbnail } from './AudioTrackDropdownItemThumbnail';
 
-export class AudioTrackDropdownItem {
-    id:string;
+export class SearchDropdownItem {
+    videoId:string;
+    channelId:string;
+    isLive:boolean;
     title:string;
     description:string;
     thumbnails:AudioTrackDropdownItemThumbnail[];
