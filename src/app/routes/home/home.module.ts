@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { TrackItemListComponent } from '../../components/track-item-list/track-item-list.component';
+import { TrackItemComponent } from '../../components/track-item/track-item.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,7 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, TrackItemListComponent, TrackItemComponent],
+  entryComponents: [ ]
 })
 export class HomePageModule {}

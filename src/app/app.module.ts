@@ -11,16 +11,30 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
 import { AudioTrackDropdownService } from './services/audio-track-dropdown.service';
 
 import { AppComponent } from './app.component';
-import { TrackItemListComponent } from './components/track-item-list/track-item-list.component';
-import { TrackItemComponent } from './components/track-item/track-item.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { StoreModule } from '@ngrx/store';
+
+import * as SearchDropdownReducer from './store/SearchDropdown.reducer';
+import * as AudioTrackSelectedReducer from './store/AudioTrackSelected.reducer';
+import * as AudioTrackPlayingReducer from './store/AudioTrackPlaying.reducer';
+
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { AudioPlayerService } from './services/audio-player.service';
 
 @NgModule({
-  declarations: [AppComponent, TrackItemListComponent, TrackItemComponent, ToolbarComponent],
+  declarations: [AppComponent,  ToolbarComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule, 
+    HttpClientModule,
+    StoreModule.forRoot({ 
+      dropdown: SearchDropdownReducer.reducer, 
+      audioTrackSelected: AudioTrackSelectedReducer.reducer, 
+      audioTrackPlaying: AudioTrackPlayingReducer.reducer,
+    })],
   providers: [
     StatusBar,
     SplashScreen,
@@ -28,6 +42,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     Media,
     FileTransfer,
     AudioTrackDropdownService,
+    AudioPlayerService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

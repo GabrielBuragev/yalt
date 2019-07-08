@@ -1,8 +1,39 @@
 <ion-app>
-  <ion-header>
+  <ion-header class="header">
     <app-toolbar></app-toolbar>
   </ion-header>
   <ion-content>
-    <ion-router-outlet></ion-router-outlet>
+    <ion-router-outlet class="content-container"></ion-router-outlet>
   </ion-content>
+
+
+
+  <ion-footer class="footer">
+    <!-- <ion-toolbar color="primary">
+      <ion-range min="0" color="light" [max]="state.durationSec" [formControl]="seekbar" (ionFocus)="onSeekStart()" (ionBlur)="onSeekEnd($event)"
+                name="seekbar">
+        <ion-label color="light" range-left>{{ state.time }}</ion-label>
+        <ion-label color="light" range-right>{{ state.duration }}</ion-label>
+      </ion-range>
+    </ion-toolbar> -->
+
+    <ion-toolbar color="#142761" padding>
+      <ion-grid>
+        <ion-row align-items-center id="media-controls">
+          <button clear ion-col ion-button>
+            <ion-icon color="light" name="skip-backward"> </ion-icon>
+          </button>
+          <button clear ion-col ion-button >
+            <ion-icon color="light" name="play"></ion-icon>
+          </button>
+          <button clear ion-col ion-button >
+            <ion-icon color="light" name="pause"></ion-icon>
+          </button>
+          <button clear ion-col ion-button>
+            <ion-icon color="light" name="skip-forward"></ion-icon>
+          </button>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
